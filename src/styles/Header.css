@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "KaiseiDecol-Regular";
+    src: url('../../public/font/KaiseiDecol-Regular.ttf') format("truetype");
+}
+
+header {
+    font-family: KaiseiDecol-Regular;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Mypage에서 사용할 투명도가 없는 헤더 스타일 */
+.header-solid {
+    background-color: #121212;
+}
+
+.header-container {
+    padding: 1rem 2rem;
+    display: flex;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.header-factors {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: end;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+}
+
+.header-container a:hover {
+    color: #AEB5C9;
+}
+
+.header-container a.active {
+    color: #AEB5C9;
+} 
