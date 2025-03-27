@@ -48,7 +48,7 @@
 
                 <nav className="d-flex justify-content-center mt-5 mb-5">
                     <ul className="pagination">
-                        <li className="page-item active">1</li>
+                        <li className="page-item">1</li>
                         <li className="page-item">2</li>
                         <li className="page-item">3</li>
                         <li className="page-item">Next</li>

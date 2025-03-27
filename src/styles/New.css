@@ -1,6 +1,29 @@
+@font-face {
+    font-family: "NanumMyeongjo-Regular";
+    src: url('../../public/font/NanumMyeongjo-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "KaiseiDecol-Regular";
+    src: url('../../public/font/KaiseiDecol-Regular.ttf') format("truetype");
+}
+
 .new-banner {
     width: 100%;
     max-height: 100vh;
     object-fit: cover;
     overflow: hidden;  
+}
+
+.card-body {
+    font-family: NanumMyeongjo-Regular;
+}
+
+.pagination {
+    font-family: KaiseiDecol-Regular;
+}
+
+.page-item {
+    border: 1px solid black;
+    padding: 2px 10px;
 }
