@@ -5,6 +5,7 @@ const Info = () => {
         <div className="about-us-container">
             <div className="about-us-section-left">
                 <img src={`${process.env.PUBLIC_URL}/img/about_us.png`}
+                alt="about_us"
                 className="about-us-image" />
             
                 <div className="text-about-us">

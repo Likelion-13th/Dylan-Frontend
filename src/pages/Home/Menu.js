@@ -14,7 +14,7 @@ const Menu = () => {
             </Link>
             <Link to="/diffuser" className="menu-section">
                 <img src={`${process.env.PUBLIC_URL}/img/banner_diffuser.jpg`} 
-                alt="perfume"
+                alt="diffuser"
                 className="menu-diffuser" />
                 <div className="text-overlay text-diffuser">
                     Diffuser
