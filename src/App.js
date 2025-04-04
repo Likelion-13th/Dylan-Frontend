@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './component/Header';
 import Footer from './component/Footer';
+import ToolBar from './component/ToolBar';
 import Home from './pages/Home/Home';
 import Mypage from './pages/Mypage/Mypage'
 import Diffuser from './pages/ProductPage/Diffuser';
@@ -13,6 +14,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <ToolBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/mypage' element={<Mypage />} />

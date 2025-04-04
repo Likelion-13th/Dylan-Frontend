@@ -9,6 +9,7 @@ header {
     position: fixed;
     width: 100%;
     transition: background-color 0.3s ease;
+    z-index: 100;
 }
 
 /* Mypage에서 사용할 투명도가 없는 헤더 스타일 */
