@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Info = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const element = document.querySelector('.about-us-container');
+            if (element) {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                // 화면의 80% 지점에서 애니메이션 시작
+                if (elementTop < windowHeight * 0.8) {
+                    setIsVisible(true);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="about-us-container">
+        <div className={`about-us-container ${isVisible ? 'visible' : ''}`}>
             <div className="about-us-section-left">
                 <img src={`${process.env.PUBLIC_URL}/img/about_us.png`}
                 alt="about_us"

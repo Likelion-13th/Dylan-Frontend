@@ -75,6 +75,14 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.about-us-container.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .about-us-section-left {
