@@ -17,23 +17,23 @@
 
     const New = () => {
         const products = [
-                        { id: 1, isNew: true, name: "딥디크 오르페옹", brand: "딥디크", price: "250,000원", imagePath: deep },
-                        { id: 2, isNew: true, name: "크리드 어벤투스", brand: "크리드", price: "430,000원", imagePath: creed },
-                        { id: 3, isNew: true, name: "몽블랑 익스플로러", brand: "몽블랑", price: "50,800원", imagePath: mong },
-                        { id: 4, isNew: true, name: "이솝 휠", brand: "이솝", price: "105,400원", imagePath: ae },
-                        { id: 5, isNew: true, name: "에이딕트 멜로우", brand: "다이소", price: "3,900원", imagePath: daiso },
-                        { id: 6, isNew: true, name: "러쉬 우디", brand: "썸유", price: "74,900원", imagePath: ssum },
-                        { id: 7, isNew: true, name: "카멜리아", brand: "샤넬", price: "124,900원", imagePath: cha },
-                        { id: 8, isNew: true, name: "스탠다드 뷰티", brand: "무신사", price: "54,900원", imagePath: musin },
-                        { id: 9, isNew: true, name: "바이레도 블랑쉬", brand: "바이레도", price: "113,000원", imagePath: by },
-                        { id: 10, isNew: true, name: "스파이시 머스크", brand: "디올트", price: "64,600원", imagePath: di },
+                        { id: 1, isNew: true, name: "딥디크 오르페옹", brand: "딥디크", price: 250000, imagePath: deep },
+                        { id: 2, isNew: true, name: "크리드 어벤투스", brand: "크리드", price: 430000, imagePath: creed },
+                        { id: 3, isNew: true, name: "몽블랑 익스플로러", brand: "몽블랑", price: 50800, imagePath: mong },
+                        { id: 4, isNew: true, name: "이솝 휠", brand: "이솝", price: 105400, imagePath: ae },
+                        { id: 5, isNew: true, name: "에이딕트 멜로우", brand: "다이소", price: 3900, imagePath: daiso },
+                        { id: 6, isNew: true, name: "러쉬 우디", brand: "썸유", price: 74900, imagePath: ssum },
+                        { id: 7, isNew: true, name: "카멜리아", brand: "샤넬", price: 124900, imagePath: cha },
+                        { id: 8, isNew: true, name: "스탠다드 뷰티", brand: "무신사", price: 54900, imagePath: musin },
+                        { id: 9, isNew: true, name: "바이레도 블랑쉬", brand: "바이레도", price: 113000, imagePath: by },
+                        { id: 10, isNew: true, name: "스파이시 머스크", brand: "디올트", price: 64600, imagePath: di },
                     ]
 
     const [selectedProduct, setSelectedProduct] = useState(null)
     const [isModalOpen, setModalOpen] = useState(false)
 
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 15; // 페이지당 15개 상품 표시
+    const itemsPerPage = 5;
 
     const totalPages = Math.ceil(products.length / itemsPerPage);
 

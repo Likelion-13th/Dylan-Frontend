@@ -52,7 +52,7 @@ const Diffuser = () => {
     const [isModalOpen, setModalOpen] = useState(false)
 
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 15; // 페이지당 15개 상품 표시
+    const itemsPerPage = 5;
 
     const totalPages = Math.ceil(products.length / itemsPerPage);
 
