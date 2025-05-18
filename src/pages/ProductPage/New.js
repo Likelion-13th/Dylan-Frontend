@@ -1,4 +1,4 @@
-    import React, { useState, useEffect } from "react";
+    import React, { useState } from "react";
     import ae from '../../assets/items/ae.png'
     import by from '../../assets/items/by.png'
     import cha from '../../assets/items/cha.png'
