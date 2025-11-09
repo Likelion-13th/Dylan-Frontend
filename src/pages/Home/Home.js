@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../../styles/New.css'
 import Menu from "./Menu"
 import '../../styles/Home.css'
 import Banner from "./Banner"
 import Info from "./Info"
+import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+const Home = ({onLoginChange}) => {
+    const [cookies, setCookie] = useCookies(["accessToken"]);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        const accessToken = params.get("accessToken");
+
+        if(accessToken) {
+            setCookie("accessToken", accessToken, {
+                path: '/',
+                maxAge: 60*60*24*7
+            });
+            onLoginChange(true);
+            navigate("/", { replace: true });
+        }
+    }, [setCookie, navigate, onLoginChange]);
+
     return (
         <div className="home-container">
             <Banner />
