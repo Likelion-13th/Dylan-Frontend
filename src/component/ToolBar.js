@@ -34,7 +34,7 @@ const ToolBar = ({ isLogin, onLoginChange }) => {
       const redirectUrl =
           process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-              : "https://dylan-perfume.netlify.app/";
+              : "https://dylan-perfume.netlify.app";
 
       // 변경된 진입 경로: /oauth2/start/kakao
       const oauthUrl = "http://sajang-dev-env.eba-8tknt4hb.ap-northeast-2.elasticbeanstalk.com/oauth2/start/kakao" +
